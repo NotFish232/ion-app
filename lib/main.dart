@@ -12,10 +12,8 @@ class IonApp extends StatelessWidget {
       : _controller = WebViewController()
           ..loadRequest(Uri.parse("https://ion.tjhsst.edu"));
 
-
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'Flutter Demo', home: WebViewWidget(controller: _controller));
+    return WebViewWidget(controller: _controller);
   }
 }
